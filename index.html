@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th{
+            border: 1px solid black;
+        }
+        td{
+            
+            border: 1px solid black;
+           
+        }
+      .a1{
+        
+          width: 400px;
+          margin: 0 auto;
+          border: 1px solid black;
+          padding: 1px;
+      }
+      .a111{
+          padding: 1px;
+      }
+      .a12{
+          background-color: rgb(213, 213, 213);
+          border-radius: 2px;
+      }
+
+      .a3{ 
+          border: 1px solid black;
+          padding: 1px;
+
+      }
+      .a31{
+        width: 97%;
+        margin-left: 0.5%;
+      }
+      .a4{
+          border: 1px solid black;
+          padding: 1px;
+      }
+      #d3{
+          color: red;
+      }
+      
+    
+    
+    </style>
+</head>
+<body>
+
+
+    <figure class="a1" >
+        <table width="100%">
+            <tr >
+                <th colspan="2"> 
+                    Pizza shop 2.0
+                </th>
+            </tr>
+            <tr>
+                <td width="30%">
+                    Name <b id="d3"> *</b>
+                </td>
+                <td class="a111">
+                    <input  placeholder="Name" id="name"  required>
+                </td>
+            </tr>
+            <tr>
+            <td width="32%">
+                Pizza Topping <b id="d3"> *</b>
+            </td>
+            <td >
+                
+                    <legend><abbr title="This field is mandatory" aria-label="required"></abbr></legend>
+                    
+                    <input type="radio" required name="driver" id="r1" value="Supreme"><label for="r1">Supreme</label> <br>
+                    <input type="radio" required name="driver" id="r2" value="Vegetarian"><label for="r2">Vegetarian</label> <br>
+                 
+                    <input type="radio" required name="driver" id="r3" value="Hawaiian"><label for="r3">Hawaiian</label>
+                    
+        </tr>
+        <tr>
+        <td width="30%">
+            Pizza Sauce 
+        </td>
+        <td>
+            <select class="a12" >
+                <option>Tomato</option>
+                <option>Сucumbers</option>
+                <option>Onion</option>
+                <option>Pineapples</option>
+                <option></option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td width="30%">
+            Optional Exatras <b id="d3"> *</b>
+        </td>
+        <td>
+            <legend><abbr title="This field is mandatory" aria-label="required"></abbr></legend>
+
+         
+                      <input type="checkbox" required name="driver" id="r4" value="Extra Cheese"><label for="r4">Extra Cheese</label> 
+                 
+                    <input type="checkbox" required name="driver" id="r5" value="Gluten Free Base"><label for="r5">Gluten Free Base</label>
+        </td>
+    </tr>
+            
+        </table>
+       
+    <form>
+        
+        
+        
+        <div class="a3">
+          
+
+            Delivery instructions: <b id="d3"> *</b>
+            <textarea placeholder="Delivery instructions:" class="a31" rows="3" autofocus required></textarea>
+           
+        
+        </div>
+        <div class="a4">
+            <input   type="submit" value="Send my Order" formnovalidate>
+       
+    </form>
+
+  
+</figure>
+
+</body>
+</html>
